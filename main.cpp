@@ -1,8 +1,17 @@
 #include "utils.h"
+#include "DataType/Mutex_Stack.h"
+
+
+
+
 
 
 int main()
 {
-    std::cout<<Utils::getTimeStamp();
+    Mutex_Stack<std::string>  stack;
+
+    std::cout<<stack.size()<<"\n";
+
+
     return 0;
 }
